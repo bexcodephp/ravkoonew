@@ -110,7 +110,7 @@
         			</div><!-- .menu-top -->        			
                 </div>
                 
-                <div class="col-xl-4 col-lg-5 menu-right-wrapper d-lg-block d-none">
+                <div class="col-xxl-4 col-xl-5 col-lg-7 menu-right-wrapper d-lg-block d-none">
                     <div class="menu-right">
                         <div class="menu-right-conents">
                             <h2 class="menu-title mb-md-5">MEET RAVKOO</h2>

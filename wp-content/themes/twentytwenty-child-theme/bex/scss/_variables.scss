@@ -48,6 +48,9 @@ $border-black: #000000;
         padding: 0 20px;
         min-width: 125px;
         border-radius: 8px;
+        @media only screen and (max-width: 1199px) {
+            font-size: 15px;
+        }
         &:hover,
         &:focus {
             box-shadow: none !important;

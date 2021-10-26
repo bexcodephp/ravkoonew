@@ -11,11 +11,11 @@ get_header();
 	<div id="js-home-sections" class="home-sections">
 		<section class="home-section panel home-banner">
 			<!-- web view -->
-			<img src="<?php echo get_home_url()?>/wp-content/uploads/2021/10/banner_home_v2.svg" alt="" class="img-full d-lg-block d-none">
+			<img src="<?php echo get_home_url()?>/wp-content/uploads/2021/10/banner_home_v2.png" alt="" class="img-full d-lg-block d-none">
             <!-- ipad view -->
-            <img src="<?php echo get_home_url()?>/wp-content/uploads/2021/10/bg_home_ipad.svg" alt="" class="img-full d-lg-none d-md-block d-none">
+            <img src="<?php echo get_home_url()?>/wp-content/uploads/2021/10/bg_home_ipad.png" alt="" class="img-full d-lg-none d-md-block d-none">
 			<!-- mobile view -->
-			<img src="<?php echo get_home_url()?>/wp-content/uploads/2021/10/bg_home_mobile.svg" alt="" class="img-full d-md-none">
+			<img src="<?php echo get_home_url()?>/wp-content/uploads/2021/10/bg_home_mobile.png" alt="" class="img-full d-md-none">
 
 			<div class="container banner-contents">
 				<div class="row">

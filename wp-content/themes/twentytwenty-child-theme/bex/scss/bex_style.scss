@@ -1,4 +1,5 @@
 @import "variables";
+@import "columns";
 
 :root {
     --pad-top-bottom: 80px;
@@ -104,6 +105,10 @@ section{
         width: 100%;
         margin-left:0;
         margin-right: 0;
+        .lbl-search{
+            position: absolute;
+            left: 0;
+        }
     }
     .header-toggles{
         margin-right: 0;
@@ -283,10 +288,14 @@ section{
                             line-height: 28px;
                             padding: 8px 0;
                         }
-                        // @media only screen and (max-width: 576px) {
-                        //     font-size: 16px;
-                        //     line-height: 20px;
-                        // }
+                        @media only screen and (max-height: 767px) and (-webkit-min-device-pixel-ratio: 1) {
+                            font-size: 22px;
+                            line-height: 40px;
+                        }
+                        @media only screen and (max-width: 767px) {
+                            font-size: 20px;
+                            line-height: 28px;
+                        }
                     }
                     button.sub-menu-toggle{
                         padding: 0;
@@ -391,6 +400,10 @@ section{
                     font-weight: 300;
                     font-size: 19px;
                     line-height: 28px;
+                    @media only screen and (max-height: 767px) and (-webkit-min-device-pixel-ratio: 1) {
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
                 }
             }
             .location-wrapper{
@@ -540,6 +553,10 @@ section{
                     &:hover{
                         text-decoration: none;
                     }
+                    @media only screen and (max-width: 1199px) {
+                        min-width: 110px;
+                        font-size: 15px;
+                    }
                 }
             }
         }
@@ -551,6 +568,7 @@ section{
                 top: 0;
                 background-color: #fff;
                 height: 30px;
+                line-height: 30px;
                 border-radius: 8px;
                 overflow: hidden;
                 visibility: hidden;
@@ -574,10 +592,15 @@ section{
                     text-align: center;
                     text-decoration: underline;
                     padding-left: 20px;
-                    padding-right: 20px;
+                    // padding-right: 20px;
+                    @media only screen and (max-width: 1199px) {
+                        font-size: 15px;
+                    }
                 }
                 .btn{
                     text-decoration: underline;
+                    float: right;
+                    padding-right: 1.5rem;
                     .bi{
                         color: $text-pink;
                         font-size: 14px;
@@ -588,6 +611,12 @@ section{
                         outline: none;
                         box-shadow: none;
                     }
+                }
+            }
+            .btn-partner{
+                @media only screen and (max-width: 1199px) {
+                    min-width: 110px;
+                    font-size: 15px;
                 }
             }
         }
@@ -633,14 +662,12 @@ section{
                 top: 0;
                 bottom: 0;
                 right: 0;
-                left: 0;
+                // left: 0;
                 z-index: 1;
                 width: 0%;
                 height: 100%;
                 background: rgba(196, 196, 196, 0.8);
-                transition: all linear 0.6s; 
-                // transform: scale3d(2.2, 1.4, 1) rotate3d(0, 0, 1, 0deg) translate3d(0, 100%, 0);                    
-                // transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 0deg) translate3d(0, 0%, 0);
+                transform: scale3d(2.2, 1.4, 1) rotate3d(0, 0, 1, 0deg) translate3d(0, 100%, 0);
             }
             &.app-overlay{
                 .btn-download-app{
@@ -648,7 +675,9 @@ section{
                     z-index: 2;
                 }
                 &:before{
+                    transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 0deg) translate3d(0, 0%, 0);
                     width: 100%;
+                    transition: all linear 0.4s;
                 }
             }
         }
@@ -693,26 +722,34 @@ section{
                     box-shadow: 0px 114px 123px rgba(0, 0, 0, 0.5), 0px 73.8889px 72.0347px rgba(0, 0, 0, 0.05), 0px 43.9111px 39.1778px rgba(0, 0, 0, 0.02), 0px 22.8px 19.9875px rgba(0, 0, 0, 0.02), 0px 9.28889px 10.0222px rgba(0, 0, 0, 0.03), 0px 2.11111px 4.84028px rgba(0, 0, 0, 0.01);
                 }
             }
+            &:before{
+                content: '';
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                // left: 0;
+                z-index: 1;
+                width: 00%;
+                height: 100%;
+                background: rgba(196, 196, 196, 0.4);
+                transform: scale3d(2.2, 1.4, 1) rotate3d(0, 0, 1, 0deg) translate3d(0, 100%, 0);                    
+            }
             &.social-overlay{
                 .btn-social{
                     position: relative;    
                     z-index: 2;
                 }
                 &:before{
-                    content: '';
-                    position: fixed;
-                    top: 0;
-                    bottom: 0;
-                    right: 0;
-                    left: 0;
-                    z-index: 1;
+                    transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 0deg) translate3d(0, 0%, 0);
                     width: 100%;
-                    height: 100%;
-                    background: rgba(196, 196, 196, 0.8);
-                    
+                    transition: all linear 0.4s; 
                 }
             }
         }
+    }
+    .section-inner{
+        align-items: center;
     }
 }
 // overlay footer apps and social links
@@ -785,20 +822,16 @@ section{
             height: 100%;
             z-index: 0;
             user-select: none;
-            @media only screen and (max-width: 1199px) {
-                object-fit: contain;
-            }
-            @media only screen and (max-width: 767px) {
-                object-fit: cover;
-            }
         }
         .banner-contents{
             z-index: 1;
             .title-wrapper{
                 @media only screen and (max-width: 1199px) {
                     padding-top: 90px;
+                }
+                @media only screen and (max-width: 991px) {
                     text-align: left;
-                }   
+                } 
             }
         }
     }

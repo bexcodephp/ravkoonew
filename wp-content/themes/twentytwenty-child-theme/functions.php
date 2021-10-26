@@ -787,8 +787,6 @@ function twentytwenty_get_elements_array() {
 	return apply_filters( 'twentytwenty_get_elements_array', $elements );
 }
 
-
-
 // theme ravkoo------------------------------------->>>>>>>>>>>>>>>>>
 add_action( 'wp_enqueue_scripts', function() {
     $styles = wp_styles();
@@ -840,6 +838,7 @@ function my_register_scripts() {
 	// 	// wp_enqueue_script( 'tiltedpage', get_template_directory_uri() . '/bex/js/tiltedpage-scroll.min.js' );
 	// }
 	
+    // scroll magic js start
 	wp_enqueue_script( 'ScrollMagic', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js' );
 	wp_enqueue_script( 'addIndicators', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js' );
 	wp_enqueue_script( 'gsap', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js' );
@@ -850,11 +849,9 @@ function my_register_scripts() {
 	wp_enqueue_script( 'TimelineMax', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js' );
 	
 	wp_enqueue_script( 'CSSPlugin', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js' );
-	
-	
-	
+	// scroll magic js start
+		
 
 	wp_enqueue_script( 'bx-script', get_template_directory_uri() . '/bex/js/bex_script.js' );
 }
 add_action( 'wp_enqueue_scripts', 'my_register_scripts', 999 );
-
