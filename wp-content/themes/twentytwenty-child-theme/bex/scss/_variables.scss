@@ -1,0 +1,57 @@
+$font-roboto: 'Roboto', sans-serif;
+$font-oswald: 'Oswald', sans-serif;
+$font-poppins:'Poppins', sans-serif;
+
+$text-pink: #EB0B83;
+$text-white: #ffffff;
+$text-black: #000000;
+
+$bg-pink: #EB0B83;
+$bg-white: #ffffff;
+$bg-black: #000000;
+
+$border-pink: #EB0B83;
+$border-white: #ffffff;
+$border-black: #000000;
+
+@mixin ravkoo-color($color) {
+  @if $color == "r_pink" {
+    background: -webkit-linear-gradient(#E71182, #A51F5E) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+  }  
+}
+// @mixin font-awesome($type) {
+//   @if $type=="font-awesome" {
+//       display: inline-block;
+//       font: normal normal normal 14px/1 FontAwesome;
+//       font-size: inherit;
+//       text-rendering: auto;
+//       -webkit-font-smoothing: antialiased;
+//       -moz-osx-font-smoothing: grayscale;
+//   }
+// }
+.btn{
+    &.btn-primary {
+        background-color: $bg-white !important;
+        color: $text-pink !important;
+        border: 1px solid $border-white !important;
+        display: block;
+        font-family: $font-roboto;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: center;
+        height: 30px;
+        padding: 0 20px;
+        min-width: 125px;
+        border-radius: 8px;
+        &:hover,
+        &:focus {
+            box-shadow: none !important;
+            text-decoration: none;
+        }
+    }
+}
