@@ -14,7 +14,7 @@
 
 		<div class="section-inner">
 
-            <!-- <div class="lbl-search"><i class="bi bi-search"></i></div> -->
+            <div class="lbl-search"><i class="bi bi-search"></i></div>
 
 			<?php
 			get_search_form(
