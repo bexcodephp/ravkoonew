@@ -46,10 +46,75 @@ $border-black: #000000;
         text-align: center;
         height: 30px;
         padding: 0 20px;
-        min-width: 125px;
+        // min-width: 125px;
         border-radius: 8px;
         @media only screen and (max-width: 1199px) {
             font-size: 15px;
+        }
+        &:hover,
+        &:focus {
+            box-shadow: none !important;
+            text-decoration: none;
+        }
+    }
+    &.btn-pink {
+        background-color: $bg-pink !important;
+        color: $text-white !important;
+        border: 1px solid $border-pink !important;
+        display: block;
+        font-family: $font-roboto;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: center;
+        height: 30px;
+        padding: 0 20px;
+        // min-width: 125px;
+        border-radius: 4px;
+        @media only screen and (max-width: 1199px) {
+            font-size: 15px;
+        }
+        &:hover,
+        &:focus {
+            box-shadow: none !important;
+            text-decoration: none;
+        }
+    }
+    &.btn-link-black{
+        background-color: transparent !important;
+        color: $text-black !important;
+        border: 0px !important;
+        display: block;
+        font-family: $font-roboto;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: center;
+        height: 100%;
+        padding: 0px;
+        min-width: auto;
+        border-radius: 0px;
+        position: relative;
+        &:after{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            border-bottom: 1px solid $border-black;
+        }
+        .bi{
+            font-size: 80%;
+        }
+        @media only screen and (max-width: 1199px) {
+            font-size: 18px;
+        }
+        @media only screen and (max-width: 767px) {
+            font-size: 14px;
         }
         &:hover,
         &:focus {

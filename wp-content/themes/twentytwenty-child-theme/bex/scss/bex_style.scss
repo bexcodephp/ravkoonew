@@ -1,5 +1,6 @@
 @import "variables";
 @import "columns";
+@import "commonstyle";
 
 :root {
     --pad-top-bottom: 80px;
@@ -32,45 +33,7 @@ div,p{
         max-width: 1320px;
     }
 }
-.bg-white{
-    background-color: #fff !important;
-}
-.bg-blue{
-    background-color: blue !important;
-}
-.bg-red{
-    background-color: red !important;
-}
-.bg-green{
-    background-color: green !important;
-}
-.bg-yellow{
-    background-color: yellow !important;
-}
-.bg-trans{
-    background-color: transparent !important
-}
 
-.img-full{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-.sec-p{
-    @media only screen and (min-width: 1200px) {
-        padding-top: var(--pad-top-bottom);
-        padding-bottom: var(--pad-top-bottom);     
-    }
-    @media only screen and (max-width: 1199px) {
-        padding-top: var(--pad-top-bottom);
-        padding-bottom: var(--pad-top-bottom);  
-    }
-    @media only screen and (max-width: 767px) {
-        padding-top: var(--pad-top-bottom);
-        padding-bottom: var(--pad-top-bottom); 
-    }
-}
 section{
     padding: 0;
     @media only screen and (min-width: 768px) {
@@ -79,9 +42,7 @@ section{
     }
 
 }
-.r-pink{
-    @include ravkoo-color(r_pink);
-}
+
 // header
 #site-header{
     background-color: transparent;
@@ -500,7 +461,7 @@ section{
         background: #E9E9F2;
         border: 1px solid #232326;
         border-radius: 4px;
-        
+        letter-spacing: 0.7px;
         &:focus{
             outline: none;
         }
@@ -778,8 +739,8 @@ section{
 .title{
     font-family: $font-oswald;
     font-size: 55px;
-    font-weight: 700;
     line-height: 82px;
+    font-weight: 700;
     letter-spacing: -0.035em;
     @media only screen and (max-width: 1199px) {
         font-size: 48px;
@@ -792,60 +753,356 @@ section{
         letter-spacing: -0.035em;
     }
 }
-
+.sub-title{
+    font-family: $font-oswald;
+    font-size: 50px;
+    line-height: 61px;
+    font-weight: 300;
+    letter-spacing: -0.035em;
+    color: $text-black;
+    @media only screen and (max-width: 1199px) {
+        font-size: 40px;
+        line-height: 51px;
+    }
+    @media only screen and (max-width: 767px) {
+        font-size: 32px;
+        line-height: 44.5px;
+    }
+}
 // home page sections
-.page-home-wrapper{    
-    overflow: hidden;
+.page-home-wrapper{  
+    --home_total_sections: 6;
+    --home_section_width: 600%;
+    @media only screen and (min-width: 992px)  {
+        overflow: hidden;
+    }
     .home-sections{
-        width: 500%;
+        width: 100%;
         height: 100%;
         position: relative;
-        overflow: hidden;
-        .home-section{
-            height: 100vh;
-            width: calc(100% / 5);
+        @media only screen and (min-width: 992px)  {
+            overflow: hidden;
+            width: var(--home_section_width);
+        }
+    }
+    .home-section{   
+        position: relative;      
+        @media only screen and (min-width: 992px) {
+            display: flex;   
+            align-items: center;
+            justify-content: center;
+            width: calc(100% / var(--home_total_sections));
             float: left;
-            position: relative;
-            display: flex;            
-            @media only screen and (min-width: 992px) {
-                align-items: center;
-                justify-content: center;
+            height: 100vh;
+        }
+        @media only screen and (max-width: 991px) {
+            width: 100%;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        &.section-leading-pharmacy{
+            @media only screen and (max-width: 991px) {
+                min-height: auto;
+            }
+        }
+        &.section-money.part-2{
+            @media only screen and (max-width: 991px) {
+                min-height: auto;
             }
         }
     }
-    // #pinContainer {
-    //     width: 100%;
-    //     height: 100vh;
-    //     overflow: hidden;
-    //     position: relative;
-    //     .panel {
-    //         height: 100vh;
-    //         width: 100%;
-    //         position: absolute;
-    //     }
-    // }
-    .home-banner{
-        .img-full{
-            position: absolute;
-            left:0;
-            top:0;
-            right: 0;
-            bottom: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
-            user-select: none;
-        }
-        .banner-contents{
-            z-index: 1;
-            .title-wrapper{
-                @media only screen and (max-width: 1199px) {
-                    padding-top: 90px;
-                }
-                @media only screen and (max-width: 991px) {
-                    text-align: left;
-                } 
+}
+.banner-titles{
+    z-index: 1;
+    .title-wrapper{
+        @media only screen and (max-width: 991px) {
+            text-align: left;
+        } 
+    }
+}
+.home-banner{
+    .banner-titles{
+        .title-wrapper{
+            @media only screen and (max-width: 1199px) {
+                padding-top: 90px;
             }
+        }
+    }   
+}
+// home page section section-leading-pharmacy
+.section-leading-pharmacy{
+    // horizontal scrolling
+    .card{
+        border: 0px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        max-width: 544px;
+        border-radius: 8px;
+        @media only screen and (max-width: 991px) {
+            max-width: 230px;
+        }
+        @media only screen and (max-width: 575px) {
+            max-width: 186px;
+        }
+        .row{
+            @media only screen and (min-width: 1200px) {
+                height: 186px;
+            }
+            @media only screen and (max-width: 991px) {
+                height: 350px;
+            }
+            @media only screen and (max-width: 575px) {
+                height: 307px;
+            }
+        }
+        .card-body{
+            padding: 30px 16px 20px;
+            @media only screen and (max-width: 991px) {
+                padding: 16px 20px;
+            }
+            .card-title{
+                font-family: $font-poppins;
+                font-weight: 900;
+                font-size: 24px;
+                line-height: 27px;
+                color: $text-white;
+                @media only screen and (max-width: 991px) {
+                    font-size: 17px;
+                    line-height: 20px;
+                }
+            }
+            .card-text{
+                font-family: $font-roboto;
+                font-size: 19px;
+                line-height: 22px;
+                color: $text-white;
+                @media only screen and (max-width: 991px) {
+                    font-size: 17px;
+                    line-height: 20px;
+                }
+            }
+            .card-link{
+                .btn{
+                    font-family: $font-poppins;
+                    font-size: 19px;
+                    line-height: 20px;
+                    color: $text-white;
+                    position: relative;
+                    padding: 0;
+                    @media only screen and (max-width: 1199px) {
+                        font-size: 18px;
+                        line-height: 22px;
+                    }
+                    @media only screen and (max-width: 1199px) {
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                    .bi{
+                        font-size: 14px;
+                    }
+                    &:hover,
+                    &:focus{
+                        box-shadow: none;
+                        text-decoration: none;
+                    }
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        display: block;
+                        border-bottom: 1px solid $border-white;
+                        width: 100%;
+                    }
+                }
+            }
+
+        }
+        .card-image{
+            padding: 20px 40px 0 0;
+            @media only screen and (max-width: 991px) {
+                padding: 0px;
+                align-self: end;
+            }
+            img{
+                height: 100%;
+                max-height: 186px;
+                object-position: center bottom;
+                object-fit: contain;
+                margin: auto;
+                @media only screen and (max-width: 991px) {
+                    max-height: 165px;
+                }
+                @media only screen and (max-width: 575px) {
+                    max-height: 140px;
+                }
+            }
+        }
+        &.card-watch{
+            .card-image{
+                padding-top: 0;
+            }
+        }
+    }
+    .title-wrapper{
+        @media only screen and (max-width: 991px) {
+            text-align: left;
+        }
+    }
+    .leading-pharmacy-slider{
+        .slick-slide{
+            margin-right: 15px;
+        }
+    }    
+}
+.lp-dots-container{
+    .slick-dots{
+        position: relative;
+        bottom: unset;
+        text-align: left;
+        li {
+            width: 10px;
+            height: 10px;
+            button{
+                padding: 0;
+                &::before{
+                    width: 10px;
+                    height: 10px;
+                    color: $text-black;
+                    opacity: 1;
+                }
+            }
+            &.slick-active{
+                button{
+                    &::before{
+                        color: $text-pink;
+                    }
+                }
+            }                
+        }
+    }
+}
+// section-money
+.section-money{
+    .sm-links{
+        @media only screen and (max-width: 1199px) {
+            margin-bottom: 40px;
+        }
+        .title-wrapper{
+            @media only screen and (max-width: 1199px) {
+                margin-bottom: 25px;
+            }   
+        }
+    }
+}
+// section section our best sellers
+// product listing
+// common design for product listing items
+.products-list-wrapper{
+    .product-list{
+        @media only screen and (min-width: 992px) {
+            margin-right: -10px;
+            margin-left: -10px;
+            max-width: calc(655px + 20px);
+        }
+        @media only screen and (max-width: 767px) {
+            margin-right: -8px;
+            margin-left: -8px;
+        }
+        li{
+            margin-left: 0;
+            list-style-type: none;
+            padding-right: 10px;
+            padding-left:10px;
+            @media only screen and (max-width: 767px) {
+                padding-right: 8px;
+                padding-left: 8px;
+            }
+            .card{
+                width: 204px;
+                padding: 10px;
+                border-radius: 8px;
+                background: linear-gradient(332.65deg, #E9E9F2 -7.4%, #FFFFFF 108.15%);
+                border: 0;
+                @media only screen and (max-width: 767px) {
+                    width: 164px;
+                    padding: 8px;
+                }
+                .card-img-top{
+                    display: flex;
+                    height: 230px;
+                    width: 184px;
+                    border-radius: 8px;
+                    background: linear-gradient(270deg, #E9E9F2 0%, #FFFFFF 101.17%);
+                    padding: 0px;
+                    margin-bottom: 10px;
+                    @media only screen and (max-width: 767px) {
+                        height: 167px;
+                        width: 148px;
+                    }
+                    .card-img-link{
+                        margin-top: auto;
+                        &:hover{
+                            underline: none;
+                        }
+                    }
+                    .card-img{
+                        max-width: 200px;
+                        object-fit: contain;
+                        object-position: center bottom;
+                        border-radius: 0;
+                        @media only screen and (max-width: 767px) {
+                            max-width: 148px;
+                        }                     
+                    }
+                }
+                .card-body{
+                    padding: 0px;
+                    .card-title-link{
+                        @include obs-title-style;
+                        max-width: 140px;
+                        @media only screen and (max-width: 767px) {
+                            max-width: 116px;
+                        }
+                        &:hover{
+                            text-decoration: none;
+                        }
+                        .card-title{
+                            @include obs-title-style;
+                            margin-bottom: 0;
+                            
+                        }
+                        
+                    }
+                    .card-text{
+                        @include obs-title-style;
+                    }
+                }
+                .card-footer{
+                    border: 0;
+                    background-color: transparent;
+                    &:last-child{
+                        border: 0;
+                    }
+                    .btn{
+                        font-size: 12px;
+                        min-width: 80px;
+                        padding: 0;
+                        @media only screen and (max-width: 767px) {
+                            min-width: 70px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// section section our best sellers design start
+.section-ob-sellers{
+    .obs-content{
+        // max-width: calc(655px - 30px);
+        .products-list-wrapper{
         }
     }
 }

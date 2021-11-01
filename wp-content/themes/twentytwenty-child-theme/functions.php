@@ -811,11 +811,12 @@ function my_register_styles() {
 	
 	// }
 	// fonts used
+    wp_enqueue_style( 'font-Roboto', 'https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap' );    
 	wp_enqueue_style( 'font-Oswald', 'https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap' );
 	wp_enqueue_style( 'font-Poppins', 'https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap' );
 
 	// common style
-	wp_enqueue_style( 'bx-style', get_template_directory_uri() . '/bex/css/bex_style.css' );
+	wp_enqueue_style( 'bx-style', get_template_directory_uri() . '/bex/css/bex_style.css', array(), 1.0, 'all' );
 }
 add_action( 'wp_enqueue_scripts', 'my_register_styles', 11 );
 
@@ -841,7 +842,8 @@ function my_register_scripts() {
     // scroll magic js start
 	wp_enqueue_script( 'ScrollMagic', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js' );
 	wp_enqueue_script( 'addIndicators', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js' );
-	wp_enqueue_script( 'gsap', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js' );
+    wp_enqueue_script( 'gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js' );
+	wp_enqueue_script( 'gsap-animation', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js' );
 	wp_enqueue_script( 'TweenLite', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js' );
 	wp_enqueue_script( 'TweenMax', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js' );
 	
@@ -850,6 +852,12 @@ function my_register_scripts() {
 	
 	wp_enqueue_script( 'CSSPlugin', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js' );
 	// scroll magic js start
+
+    // locomotive scroll
+    // wp_enqueue_script( 'gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js' );
+    // wp_enqueue_script( 'locomotive', 'https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.min.js' );
+    // wp_enqueue_script( 'ScrollTrigger', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js' );
+    
 		
 
 	wp_enqueue_script( 'bx-script', get_template_directory_uri() . '/bex/js/bex_script.js' );
