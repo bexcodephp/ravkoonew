@@ -842,7 +842,8 @@ function my_register_scripts() {
     // scroll magic js start
 	wp_enqueue_script( 'ScrollMagic', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js' );
 	wp_enqueue_script( 'addIndicators', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js' );
-	wp_enqueue_script( 'gsap', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js' );
+    wp_enqueue_script( 'gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js' );
+	wp_enqueue_script( 'gsap-animation', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js' );
 	wp_enqueue_script( 'TweenLite', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js' );
 	wp_enqueue_script( 'TweenMax', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js' );
 	
