@@ -341,43 +341,6 @@ get_header();
 </div><!-- #site-content -->
 
 <script>
-    // jQuery(window).on('resize', function(){
-    //     var win = jQuery(this); //this = window
-    //     if (win.width() >= 992) { 
-
-    //          // ScrollMagic 
-    //         var controller = new ScrollMagic.Controller();
-            
-    //         var tl = new TimelineMax();
-    //         tl.to("#js-home-sections", 1, {xPercent: -16.67});
-    //         tl.from("#title_2", 0.5, { opacity: 0, scale: 2.5}, "-=1");
-    //         tl.to("#js-home-sections", 1, { xPercent: -33.32 });
-
-    //         tl.from("#card_app", 0.5, { opacity: 0, xPercent: 100 }, "-=1.9");
-    //         tl.from("#card_watch", 0.5, {  opacity: 0, xPercent: 800 }, "-=1.7");
-    //         tl.from("#card_kiosk", 0.5, {  opacity: 0, xPercent: 1500 }, "-=1.5");
- 
-    //         tl.to("#js-home-sections", 1, { xPercent: -49.98});
-    //         tl.to("#js-home-sections", 1, { xPercent: -66.64});
-    //         tl.to("#js-home-sections", 1, { xPercent: -83.30});
-            
-
-    //          // tl.from("#title_money", 0.5, { xPercent: 0 }, "-=1");
-    //         // tl.from("#sm_links", 0.5, { xPercent: 200 }, "-=1");
-    //         // tl.from("#sm_content", 0.5, { xPercent: 300 }, "-=1");
-
-    //         // create scene to pin and link animation
-    //         new ScrollMagic.Scene({
-    //             triggerElement: "#js-home-wrapper",
-    //             triggerHook: "onLeave",
-    //             duration: "600%"
-    //         })
-    //         .setPin("#js-home-wrapper")
-    //         .setTween(tl)
-    //         .addTo(controller);
-    //     }
-    // });
-
     (function ($) {
         $(window).on('resize', function(){
             var win = $(this); //this = window
@@ -468,10 +431,6 @@ get_header();
 		// .setTween(wipeAnimation)
 		// .addIndicators() // add indicators (requires plugin)
 		// .addTo(controller);
-
-        // banner_title
-        // create a scene
-            
 
         $('#leading_pharmacy_slider').slick({
             slidesToShow: 2,
