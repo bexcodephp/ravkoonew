@@ -91,3 +91,31 @@
 // .tooltip > .tooltip-arrow {
 //     border-color: $border-pink; 
 // }
+
+// common padding and margin for 8px
+@mixin pad-mar($pix) {
+    @if $pix == "pad_mar_8" {
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-right: -8px;
+        margin-left: -8px;
+    }
+    @if $pix == "pad_8" {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    @if $pix == "mar_8" {
+        margin-right: -8px;
+        margin-left: -8px;
+    }
+    @if $pix == "pix_row_col" {
+        .row{
+            margin-right: -8px;
+            margin-left: -8px;
+            .col{
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+        }
+    }
+}
