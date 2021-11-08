@@ -247,7 +247,7 @@ get_header();
             <img src="<?php echo get_home_url()?>/wp-content/uploads/2021/10/bg_our_best_sellers_products.png" alt="" class="img-full bg-img d-lg-block d-none">
             <div class="container" id="">
                 <div class="row banner-titles align-items-center">
-                    <div class="col-lg-4 left obs-links" id="">
+                    <div class="col-lg-4 left obs-links mb-0" id="">
                         <div class="text-left mb-4" id="title_obs_2">
                             <div class="title-wrapper">
                                 <h2 class="title"><span class="r-pink">Our <br/></span><span class="r-pink">Best Sellers</span></h2>
@@ -268,7 +268,7 @@ get_header();
                                                 <img src="<?php echo get_home_url()?>/wp-content/uploads/2021/10/product_1.png" class="card-img" alt="product_1">
                                             </a>
                                         </div>
-                                        <div class="card-body d-flex justify-content-between align-items-start">
+                                        <div class="card-body mb-md-3 mb-2 d-flex justify-content-between align-items-start">
                                             <a href="#" class="card-title-link" role="button"><h5 class="card-title ob-title text-truncate" data-toggle="tooltip" data-placement="bottom" trigger="hover" title="Advanced Hand Sanitizer Advanced Hand Sanitizer">Advanced Hand Sanitizer Advanced Hand Sanitizer</h5></a>
                                             <div class="card-text"><span>&#36;</span><span class="product-price">1225</span></div>
                                         </div>
@@ -285,7 +285,7 @@ get_header();
                                                 <img src="<?php echo get_home_url()?>/wp-content/uploads/2021/10/product_1.png" class="card-img" alt="product_1">
                                             </a>
                                         </div>
-                                        <div class="card-body d-flex justify-content-between align-items-start">
+                                        <div class="card-body mb-md-3 mb-2 d-flex justify-content-between align-items-start">
                                             <a href="#" class="card-title-link" role="button"><h5 class="card-title ob-title text-truncate" data-toggle="tooltip" data-placement="bottom" trigger="hover" title="Advanced Hand Sanitizer Advanced Hand Sanitizer">Advanced Hand Sanitizer Advanced Hand Sanitizer</h5></a>
                                             <div class="card-text"><span>&#36;</span><span class="product-price">1225</span></div>
                                         </div>
@@ -302,7 +302,7 @@ get_header();
                                                 <img src="<?php echo get_home_url()?>/wp-content/uploads/2021/10/product_1.png" class="card-img" alt="product_1">
                                             </a>
                                         </div>
-                                        <div class="card-body d-flex justify-content-between align-items-start">
+                                        <div class="card-body mb-md-3 mb-2 d-flex justify-content-between align-items-start">
                                             <a href="#" class="card-title-link" role="button"><h5 class="card-title ob-title text-truncate" data-toggle="tooltip" data-placement="bottom" trigger="hover" title="Advanced Hand Sanitizer Advanced Hand Sanitizer">Advanced Hand Sanitizer Advanced Hand Sanitizer</h5></a>
                                             <div class="card-text"><span>&#36;</span><span class="product-price">1225</span></div>
                                         </div>
@@ -319,7 +319,7 @@ get_header();
                                                 <img src="<?php echo get_home_url()?>/wp-content/uploads/2021/10/product_1.png" class="card-img" alt="product_1">
                                             </a>
                                         </div>
-                                        <div class="card-body d-flex justify-content-between align-items-start">
+                                        <div class="card-body mb-md-3 mb-2 d-flex justify-content-between align-items-start">
                                             <a href="#" class="card-title-link" role="button"><h5 class="card-title ob-title text-truncate" data-toggle="tooltip" data-placement="bottom" trigger="hover" title="Advanced Hand Sanitizer Advanced Hand Sanitizer">Advanced Hand Sanitizer Advanced Hand Sanitizer</h5></a>
                                             <div class="card-text"><span>&#36;</span><span class="product-price">1225</span></div>
                                         </div>
@@ -337,70 +337,251 @@ get_header();
         </section>
         <!-- 4- Our Best SELLERS END -->
 
+        <!-- SECTION NO. 7 -->
+        <!-- 5- RAVKOO BLOG START -->
+        <!-- NOTE: short form = rb -->
+        <!-- part 1 START -->
+        <section class="home-section hs7 section-r-blog part-1 sec-p">
+            <!-- web view -->
+            <img src="<?php echo get_home_url()?>/wp-content/uploads/2021/11/bg_blog_web.png" alt="" class="img-full bg-img d-lg-block d-none">
+            <!-- ipad view -->
+            <img src="<?php echo get_home_url()?>/wp-content/uploads/2021/11/bg_blog_ipad.png" alt="" class="img-full bg-img d-lg-none d-md-block d-none">
+            <!-- mobile view -->
+            <img src="<?php echo get_home_url()?>/wp-content/uploads/2021/11/bg_blog_mobile.png" alt="" class="img-full bg-img d-md-none">
+            <div class="container" id="">
+                <div class="row banner-titles align-items-center">
+                    <div class="col-12 text-center" id="title_rb_1">
+                        <div class="title-wrapper">
+                            <h2 class="title"><span class="r-pink">Ravkoo <br/></span><span class="r-pink">Blogs</span></h2>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <!-- SECTION NO. 8 -->
+        <!-- part 2 START -->
+        <section class="home-section hs8 section-r-blog part-2 sec-p">
+            <img src="<?php echo get_home_url()?>/wp-content/uploads/2021/10/bg_our_best_sellers_products.png" alt="" class="img-full bg-img d-lg-block d-none">
+            <div class="container d-none" id="">
+                <div class="row banner-titles align-items-center">
+                    <div class="col-lg-4 left rb-links mb-0" id="">
+                        <div class="text-left mb-4" id="title_rb_2">
+                            <div class="title-wrapper">
+                                <h2 class="title"><span class="r-pink">Ravkoo <br/></span><span class="r-pink">Blogs</span></h2>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column align-items-start mt-2">
+                            <p class="mr-lg-5 mr-4">Everything about health, <br class="d-xl-block d-none" />care and healthcare</p>
+                            <a href="#" class="btn btn-pink btn-blog"><i class="bi bi-arrow-up-right-square-fill mr-2"></i>Go to Ravkoo Blogs</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 right rb-content" id="">
+                        <!-- product list Wrapper Start -->
+                        <div class="blog-list-wrapper">
+                            <!-- product list Start -->
+                            <div class="row row-cols-1 row-cols-md-3">
+                                <!-- blog 1 -->
+                                <article class="col mb-4 blog-list-item">
+                                    <div class="card h-100">
+                                        <div class="card-img-top p-0">
+                                            <a href="#" class="blog-img-link">
+                                                <img src="<?php echo get_home_url()?>/wp-content/uploads/2021/11/blog_1.png" class="blog-img" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="card-body position-relative">
+                                            <span class="badge badge-dark">Dark Dark</span>
+                                            <small class="text-date">August 25, 2021</small>
+                                            <h5 class="card-title mb-0">How to Choose a Telehealth Platform for Best-In-Class Virtual care</h5>
+                                        </div>
+                                        <div class="card-footer bg-trans">
+                                            <a href="#" class=""><i class="bi bi-arrow-right-circle-fill"></i></a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- blog 2 -->
+                                <article class="col mb-4 blog-list-item">
+                                    <div class="card h-100">
+                                        <div class="card-img-top p-0">
+                                            <a href="#" class="blog-img-link">
+                                                <img src="<?php echo get_home_url()?>/wp-content/uploads/2021/11/blog_1.png" class="blog-img" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="card-body position-relative">
+                                            <span class="badge badge-dark">Dark</span>
+                                            <small class="text-date">August 25, 2021</small>
+                                            <h5 class="card-title mb-0">How to Choose a Telehealth Platform for Best-In-Class Virtual care</h5>
+                                        </div>
+                                        <div class="card-footer bg-trans">
+                                            <a href="#" class=""><i class="bi bi-arrow-right-circle-fill"></i></a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- blog 3 -->
+                                <article class="col mb-4 blog-list-item">
+                                    <div class="card h-100">
+                                        <div class="card-img-top p-0">
+                                            <a href="#" class="blog-img-link">
+                                                <img src="<?php echo get_home_url()?>/wp-content/uploads/2021/11/blog_1.png" class="blog-img" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="card-body position-relative">
+                                            <span class="badge badge-dark">Dark</span>
+                                            <small class="text-date">August 25, 2021</small>
+                                            <h5 class="card-title mb-0">How to Choose a Telehealth Platform for Best-In-Class Virtual care</h5>
+                                        </div>
+                                        <div class="card-footer bg-trans">
+                                            <a href="#" class=""><i class="bi bi-arrow-right-circle-fill"></i></a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- blog 4 -->
+                                <article class="col mb-4 blog-list-item">
+                                    <div class="card h-100">
+                                        <div class="card-img-top p-0">
+                                            <a href="#" class="blog-img-link">
+                                                <img src="<?php echo get_home_url()?>/wp-content/uploads/2021/11/blog_1.png" class="blog-img" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="card-body position-relative">
+                                            <span class="badge badge-dark">Dark</span>
+                                            <small class="text-date">August 25, 2021</small>
+                                            <h5 class="card-title mb-0">How to Choose a Telehealth Platform for Best-In-Class Virtual care</h5>
+                                        </div>
+                                        <div class="card-footer bg-trans">
+                                            <a href="#" class=""><i class="bi bi-arrow-right-circle-fill"></i></a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- product list End -->
+
+                            <!-- Mobile View Blog list Start -->
+                            <div class="blogs-slider-wrapper d-md-none" id="blog_slider">
+                                <!-- blog 1 -->
+                                <article class="col mb-4 blog-list-item">
+                                    <div class="card h-100">
+                                        <div class="card-img-top p-0">
+                                            <a href="#" class="blog-img-link">
+                                                <img src="<?php echo get_home_url()?>/wp-content/uploads/2021/11/blog_1.png" class="blog-img" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="card-body position-relative">
+                                            <span class="badge badge-dark">Dark Dark</span>
+                                            <small class="text-date">August 25, 2021</small>
+                                            <h5 class="card-title mb-0">How to Choose a Telehealth Platform for Best-In-Class Virtual care</h5>
+                                        </div>
+                                        <div class="card-footer bg-trans">
+                                            <a href="#" class=""><i class="bi bi-arrow-right-circle-fill"></i></a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- blog 2 -->
+                                <article class="col mb-4 blog-list-item">
+                                    <div class="card h-100">
+                                        <div class="card-img-top p-0">
+                                            <a href="#" class="blog-img-link">
+                                                <img src="<?php echo get_home_url()?>/wp-content/uploads/2021/11/blog_1.png" class="blog-img" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="card-body position-relative">
+                                            <span class="badge badge-dark">Dark</span>
+                                            <small class="text-date">August 25, 2021</small>
+                                            <h5 class="card-title mb-0">How to Choose a Telehealth Platform for Best-In-Class Virtual care</h5>
+                                        </div>
+                                        <div class="card-footer bg-trans">
+                                            <a href="#" class=""><i class="bi bi-arrow-right-circle-fill"></i></a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- blog 3 -->
+                                <article class="col mb-4 blog-list-item">
+                                    <div class="card h-100">
+                                        <div class="card-img-top p-0">
+                                            <a href="#" class="blog-img-link">
+                                                <img src="<?php echo get_home_url()?>/wp-content/uploads/2021/11/blog_1.png" class="blog-img" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="card-body position-relative">
+                                            <span class="badge badge-dark">Dark</span>
+                                            <small class="text-date">August 25, 2021</small>
+                                            <h5 class="card-title mb-0">How to Choose a Telehealth Platform for Best-In-Class Virtual care</h5>
+                                        </div>
+                                        <div class="card-footer bg-trans">
+                                            <a href="#" class=""><i class="bi bi-arrow-right-circle-fill"></i></a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- blog 4 -->
+                                <article class="col mb-4 blog-list-item">
+                                    <div class="card h-100">
+                                        <div class="card-img-top p-0">
+                                            <a href="#" class="blog-img-link">
+                                                <img src="<?php echo get_home_url()?>/wp-content/uploads/2021/11/blog_1.png" class="blog-img" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="card-body position-relative">
+                                            <span class="badge badge-dark">Dark</span>
+                                            <small class="text-date">August 25, 2021</small>
+                                            <h5 class="card-title mb-0">How to Choose a Telehealth Platform for Best-In-Class Virtual care</h5>
+                                        </div>
+                                        <div class="card-footer bg-trans">
+                                            <a href="#" class=""><i class="bi bi-arrow-right-circle-fill"></i></a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- Mobile View Blog list End -->
+                        </div>
+                        <!-- product list Wrapper End -->
+                    </div>
+                </div>
+            </div>
+            <div>
+              <!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    region: "na1",
+    portalId: "20433085",
+    formId: "ea6191d4-fd08-4714-88fe-c255983c46cb"
+});
+</script>
+            </div>
+        </section>
+        <!-- 4- RAVKOO BLOG END -->
 	</div>
 </div><!-- #site-content -->
 
 <script>
     (function ($) {
-        $(window).on('resize', function(){
-            var win = $(this); //this = window
-            if (win.width() >= 992) { 
-                
-                 // ScrollMagic 
-                var controller = new ScrollMagic.Controller();
-                
-                var tl = new TimelineMax();
-                tl.to("#js-home-sections", 1, {xPercent: -16.67});
-                tl.from("#title_2", 0.5, { opacity: 0, scale: 2.5}, "-=1");
-                tl.to("#js-home-sections", 1, { xPercent: -33.32 });
+        var tooSmall = false;
+        var controller = null;
+        var maxWidth = 992;
+        if( $(window).width() < maxWidth ) {
+            tooSmall = true;
+        }
 
-                tl.from("#card_app", 0.5, { opacity: 0, xPercent: 100 }, "-=1.9");
-                tl.from("#card_watch", 0.5, {  opacity: 0, xPercent: 800 }, "-=1.7");
-                tl.from("#card_kiosk", 0.5, {  opacity: 0, xPercent: 1500 }, "-=1.5");
-     
-                tl.to("#js-home-sections", 1, { xPercent: -49.98});
-                tl.to("#js-home-sections", 1, { xPercent: -66.64});
-                tl.to("#js-home-sections", 1, { xPercent: -83.30});
-                
-
-                 // tl.from("#title_money", 0.5, { xPercent: 0 }, "-=1");
-                // tl.from("#sm_links", 0.5, { xPercent: 200 }, "-=1");
-                // tl.from("#sm_content", 0.5, { xPercent: 300 }, "-=1");
-
-                // create scene to pin and link animation
-                new ScrollMagic.Scene({
-                    triggerElement: "#js-home-wrapper",
-                    triggerHook: "onLeave",
-                    duration: "600%"
-                })
-                .setPin("#js-home-wrapper")
-                .setTween(tl)
-                .addTo(controller);
-            }
-        });
-        var width = $(window).width();
-        
-        if( width >= 992 ) {
+        function initScrollMagic() {
+            
             // ScrollMagic 
-            var controller = new ScrollMagic.Controller();
+            controller = new ScrollMagic.Controller();
             
             var tl = new TimelineMax();
-            tl.to("#js-home-sections", 1, {xPercent: -16.67});
+            tl.to("#js-home-sections", 1, {xPercent: -12.50});
             tl.from("#title_2", 0.5, { opacity: 0, scale: 2.5}, "-=1");
-            tl.to("#js-home-sections", 1, { xPercent: -33.32 });
+            tl.to("#js-home-sections", 1, { xPercent: -25 });
 
             tl.from("#card_app", 0.5, { opacity: 0, xPercent: 100 }, "-=1.9");
             tl.from("#card_watch", 0.5, {  opacity: 0, xPercent: 800 }, "-=1.7");
             tl.from("#card_kiosk", 0.5, {  opacity: 0, xPercent: 1500 }, "-=1.5");
- 
-            tl.to("#js-home-sections", 1, { xPercent: -49.98});
-            tl.to("#js-home-sections", 1, { xPercent: -66.64});
-            tl.to("#js-home-sections", 1, { xPercent: -83.30});
             
-
-             // tl.from("#title_money", 0.5, { xPercent: 0 }, "-=1");
-            // tl.from("#sm_links", 0.5, { xPercent: 200 }, "-=1");
-            // tl.from("#sm_content", 0.5, { xPercent: 300 }, "-=1");
+            tl.to("#js-home-sections", 1, { xPercent: -37.50});
+            tl.to("#js-home-sections", 1, { xPercent: -50.00});
+            tl.to("#js-home-sections", 1, { xPercent: -62.50});
+            tl.to("#js-home-sections", 1, { xPercent: -75.00});
+            tl.to("#js-home-sections", 1, { xPercent: -87.50});
 
             // create scene to pin and link animation
             new ScrollMagic.Scene({
@@ -412,26 +593,27 @@ get_header();
             .setTween(tl)
             .addTo(controller);
         }
+        if( !tooSmall ) {
+            initScrollMagic();
+        }
+        $(window).resize( function() {
+            var wWidth = $(window).width();
+            if( wWidth < maxWidth ) {
+                if( controller !== null && controller !== undefined ) {
+                    // completely destroy the controller
+                    controller = controller.destroy( true );
+                    // if needed, use jQuery to manually remove styles added to DOM elements by GSAP etc. here
+                }
+            } else if( wWidth >= maxWidth ) {
+                if( controller === null || controller === undefined ) {
+                    // reinitialize ScrollMagic only if it is not already initialized
+                    initScrollMagic();
+                }
+            }
+        });
 
-		// wipes container
-		// var wipeAnimation = new TimelineMax()
-		// 	.fromTo(".hs1", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
-		// 	.fromTo(".hs2", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
-		// 	.fromTo(".hs3", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone}); // in from top
-        //  .fromTo(".hs4", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone}); // in from top
-         // .fromTo(".hs5", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone}); // in from top
-
-		// // create scene to pin and link animation
-		// new ScrollMagic.Scene({
-		// 	triggerElement: "#pinContainer",
-		// 	triggerHook: "onLeave",
-		// 	duration: "500%"
-		// })
-		// .setPin("#pinContainer")
-		// .setTween(wipeAnimation)
-		// .addIndicators() // add indicators (requires plugin)
-		// .addTo(controller);
-
+        // Mobile view
+        // leading pharmacy slider
         $('#leading_pharmacy_slider').slick({
             slidesToShow: 2,
             slidesToScroll: 1,
@@ -444,6 +626,24 @@ get_header();
             appendDots:'#lp_dots_container',
             responsive: [{
                 breakpoint: 991,
+                settings: {
+                    mobileFirst: true,
+                }
+            }]
+        });
+        // blog slider
+        $('#blog_slider').slick({
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            centerPadding: '30px',
+            variableWidth: true,
+            cssEase: 'linear',
+            dots: true,
+            appendDots:'#lp_dots_container',
+            responsive: [{
+                breakpoint: 767,
                 settings: {
                     mobileFirst: true,
                 }

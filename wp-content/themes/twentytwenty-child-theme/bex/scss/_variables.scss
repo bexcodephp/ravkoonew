@@ -1,3 +1,13 @@
+:root {
+    --pad-top-bottom: 80px;
+    @media only screen and (max-width: 1199px) {
+        --pad-top-bottom: calc(80px - 20px);
+    }
+    // @media only screen and (max-width: 767px) {
+    //     --pad-top-bottom: calc(80px - 50px);
+    // }
+}
+
 $font-roboto: 'Roboto', sans-serif;
 $font-oswald: 'Oswald', sans-serif;
 $font-poppins:'Poppins', sans-serif;
@@ -123,3 +133,5 @@ $border-black: #000000;
         }
     }
 }
+
+
